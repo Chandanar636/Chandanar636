@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "codesolution"
 		},
+		"LA_Blobstorage_connectionString": {
+			"value": ""
+		},
 		"containerUri": {
 			"value": ""
 		},

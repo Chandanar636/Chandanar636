@@ -4,6 +4,9 @@
 	"parameters": {
 		"factoryName": {
 			"value": "codesolution"
+		},
+		"LA_Blobstorage_connectionString": {
+			"value": ""
 		}
 	}
 }

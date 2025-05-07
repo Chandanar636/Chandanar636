@@ -1,0 +1,9 @@
+{
+	"name": "codesolution",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2b96add1-6465-4103-843d-b1e64a17bd5b",
+		"tenantId": "6ad1134d-4137-498e-a770-50fba7df9a7e"
+	}
+}

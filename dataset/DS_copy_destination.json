@@ -1,0 +1,26 @@
+{
+	"name": "DS_copy_destination",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LA_Blobstorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@concat('employee_Startdate.csv')",
+					"type": "Expression"
+				},
+				"container": "destination"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

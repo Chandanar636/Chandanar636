@@ -1,0 +1,22 @@
+{
+	"name": "DS_Source_WlidCard",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LA_Blobstorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "source"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

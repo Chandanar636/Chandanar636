@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "DS_Getmetadata_Source",
+						"referenceName": "DS_Getmetadata_withtimestamp",
 						"type": "DatasetReference"
 					},
 					"fieldList": [

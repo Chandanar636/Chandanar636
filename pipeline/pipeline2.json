@@ -1,0 +1,25 @@
+{
+	"name": "pipeline2",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.subdirectory",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"subdirectory": {
+				"type": "array"
+			}
+		},
+		"annotations": []
+	}
+}

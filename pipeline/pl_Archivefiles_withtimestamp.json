@@ -348,7 +348,7 @@
 										},
 										"type": "String"
 									},
-									"@Datafactory": {
+									"Datafactory": {
 										"value": {
 											"value": "@pipeline().DataFactory",
 											"type": "Expression"

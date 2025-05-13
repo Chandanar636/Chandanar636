@@ -311,7 +311,7 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"storedProcedureName": "dbo.Audit_Log",
+								"storedProcedureName": "[HRP].[usp_auditlog1]",
 								"storedProcedureParameters": {
 									"endtime": {
 										"value": {

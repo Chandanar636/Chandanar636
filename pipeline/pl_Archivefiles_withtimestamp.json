@@ -314,29 +314,51 @@
 								"storedProcedureName": "[HRP].[usp_auditlog1]",
 								"storedProcedureParameters": {
 									"endtime": {
-										"value": "",
+										"value": {
+											"value": "@variables('endtime')",
+											"type": "Expression"
+										},
 										"type": "String"
 									},
 									"Filesdeleted": {
-										"value": "",
+										"value": {
+											"value": "@item().name",
+											"type": "Expression"
+										},
 										"type": "String"
 									},
 									"Pipelinename": {
-										"value": "",
+										"value": {
+											"value": "@pipeline().Pipeline",
+											"type": "Expression"
+										},
 										"type": "String"
 									},
 									"Pipelinerunid": {
-										"value": "",
+										"value": {
+											"value": "@pipeline().RunId",
+											"type": "Expression"
+										},
 										"type": "String"
 									},
 									"starttime": {
-										"value": "",
+										"value": {
+											"value": "@variables('starttime')",
+											"type": "Expression"
+										},
+										"type": "String"
+									},
+									"@Datafactory": {
+										"value": {
+											"value": "@pipeline().DataFactory",
+											"type": "Expression"
+										},
 										"type": "String"
 									}
 								}
 							},
 							"linkedServiceName": {
-								"referenceName": "LS_sql",
+								"referenceName": "LS_SQLSever",
 								"type": "LinkedServiceReference"
 							}
 						},

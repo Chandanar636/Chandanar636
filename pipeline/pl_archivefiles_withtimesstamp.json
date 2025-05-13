@@ -313,7 +313,10 @@
 								"storedProcedureName": "[HRP].[usp_auditlog1]",
 								"storedProcedureParameters": {
 									"endtime": {
-										"value": "",
+										"value": {
+											"value": "@variables('End time')",
+											"type": "Expression"
+										},
 										"type": "String"
 									},
 									"Filesdeleted": {
@@ -338,7 +341,10 @@
 										"type": "String"
 									},
 									"starttime": {
-										"value": "",
+										"value": {
+											"value": "@variables('start time')",
+											"type": "Expression"
+										},
 										"type": "String"
 									},
 									"Datafactory": {

@@ -111,7 +111,7 @@
 										"value": "@activity('2nd stage').output.childItems",
 										"type": "Expression"
 									},
-									"dirctory": {
+									"directory": {
 										"value": "@item().name",
 										"type": "Expression"
 									}

@@ -244,7 +244,7 @@
 							"type": "Delete",
 							"dependsOn": [
 								{
-									"activity": "Audit log",
+									"activity": "audit log",
 									"dependencyConditions": [
 										"Succeeded"
 									]
@@ -285,7 +285,7 @@
 							}
 						},
 						{
-							"name": "Audit log",
+							"name": "audit log",
 							"type": "SqlServerStoredProcedure",
 							"dependsOn": [
 								{
@@ -303,8 +303,33 @@
 								"secureInput": false
 							},
 							"userProperties": [],
+							"typeProperties": {
+								"storedProcedureName": "[HRP].[usp_auditlog1]",
+								"storedProcedureParameters": {
+									"endtime": {
+										"value": "",
+										"type": "String"
+									},
+									"Filesdeleted": {
+										"value": "",
+										"type": "String"
+									},
+									"Pipelinename": {
+										"value": "",
+										"type": "String"
+									},
+									"Pipelinerunid": {
+										"value": "",
+										"type": "String"
+									},
+									"starttime": {
+										"value": "",
+										"type": "String"
+									}
+								}
+							},
 							"linkedServiceName": {
-								"referenceName": "LS_SQLSever",
+								"referenceName": "LS_sql",
 								"type": "LinkedServiceReference"
 							}
 						}

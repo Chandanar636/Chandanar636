@@ -63,13 +63,7 @@
 				"outputs": [
 					{
 						"referenceName": "DS_Source_to_Archive_Blob",
-						"type": "DatasetReference",
-						"parameters": {
-							"Archivefilename": {
-								"value": "@activity('process file  from soucre destinatiom_copy1').output",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					}
 				]
 			},

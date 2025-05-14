@@ -12,6 +12,7 @@
 						"value": "@pipeline().parameters.filenames",
 						"type": "Expression"
 					},
+					"batchCount": 5,
 					"activities": [
 						{
 							"name": "Copy datafrom source to database",

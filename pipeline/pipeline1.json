@@ -62,10 +62,6 @@
 										"Filenames": {
 											"value": "@item().name",
 											"type": "Expression"
-										},
-										"subdirectory": {
-											"value": "@pipeline().parameters.subdirectory",
-											"type": "Expression"
 										}
 									}
 								}

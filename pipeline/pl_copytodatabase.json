@@ -48,8 +48,7 @@
 						"value": "@activity('Get foldername from source blob').output.childItems",
 						"type": "Expression"
 					},
-					"isSequential": false,
-					"batchCount": 5,
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "Get files from source",

@@ -2,7 +2,7 @@
 	"name": "DS_Generic_tablenames",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "LS_sql",
+			"referenceName": "LS_SQLSever",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {

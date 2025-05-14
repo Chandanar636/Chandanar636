@@ -10,10 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": {
-					"value": "@dataset().Archivefilename",
-					"type": "Expression"
-				},
 				"folderPath": {
 					"value": "@concat(formatDateTime(utcNow(),'yyyyMMdd'))",
 					"type": "Expression"

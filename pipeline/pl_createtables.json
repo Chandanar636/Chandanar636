@@ -60,7 +60,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"Filenames": {
-											"value": "@pipeline().parameters.filenames",
+											"value": "@item().name",
 											"type": "Expression"
 										},
 										"subdirectory": {

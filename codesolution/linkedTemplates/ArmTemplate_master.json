@@ -19,6 +19,14 @@
 			"type": "string",
 			"defaultValue": "SQLADFTraining"
 		},
+		"LS_sql_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "sqltraining2.database.windows.net"
+		},
+		"LS_sql_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "SQLDATABASE"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -54,10 +62,36 @@
 					},
 					"LS_SQLSever_properties_typeProperties_database": {
 						"value": "[parameters('LS_SQLSever_properties_typeProperties_database')]"
+					},
+					"LS_sql_properties_typeProperties_server": {
+						"value": "[parameters('LS_sql_properties_typeProperties_server')]"
+					},
+					"LS_sql_properties_typeProperties_database": {
+						"value": "[parameters('LS_sql_properties_typeProperties_database')]"
 					}
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "codesolution_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'codesolution_ArmTemplate_0')]"
+			]
 		}
 	]
 }

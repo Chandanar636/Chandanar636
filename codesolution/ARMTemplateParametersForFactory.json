@@ -13,6 +13,12 @@
 		},
 		"LS_SQLSever_properties_typeProperties_database": {
 			"value": "SQLADFTraining"
+		},
+		"LS_sql_properties_typeProperties_server": {
+			"value": "sqltraining2.database.windows.net"
+		},
+		"LS_sql_properties_typeProperties_database": {
+			"value": "SQLDATABASE"
 		}
 	}
 }

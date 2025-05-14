@@ -188,13 +188,7 @@
 							"outputs": [
 								{
 									"referenceName": "DS_Source_to_Archive_Blob",
-									"type": "DatasetReference",
-									"parameters": {
-										"Archivefilename": {
-											"value": "@{concat(item().name)}",
-											"type": "Expression"
-										}
-									}
+									"type": "DatasetReference"
 								}
 							]
 						},
@@ -311,7 +305,7 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"storedProcedureName": "[HRP].[usp_auditlog1]",
+								"storedProcedureName": "[HRP].[usp_auditlog3]",
 								"storedProcedureParameters": {
 									"endtime": {
 										"value": {
